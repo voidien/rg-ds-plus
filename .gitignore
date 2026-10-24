@@ -10,3 +10,5 @@ extracted/
 out/
 examples/*/dualscreen
 examples/*/kms_dualscreen
+examples/*/gbm_egl_dualscreen
+examples/*/test_scene

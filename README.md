@@ -11,10 +11,13 @@ Research and tooling for writing custom software for the Anbernic RG DS Plus
   and how to use it as a UART test image.
 - [docs/DUAL_SCREEN_KMS.md](docs/DUAL_SCREEN_KMS.md): how BananaLinux drives both panels through KMS
   (which connector is top, CRTCs, dumb buffers, DRM leases, sleep).
+- [docs/GPU_PATH.md](docs/GPU_PATH.md): the GBM + EGL + GLES2 renderer for both panels and its test status.
 - [tools/extract_firmware.py](tools/extract_firmware.py): unpacks an official image
   (partitions, boot FIT, kernel, kernel config, device trees).
 - [examples/dualscreen](examples/dualscreen): SDL2 test that opens one window per display.
 - [examples/kms_dualscreen](examples/kms_dualscreen): direct DRM/KMS test, no compositor (stop Weston first).
+- [examples/gbm_egl_dualscreen](examples/gbm_egl_dualscreen): GPU rendering with GBM + EGL + GLES2; headless
+  test passes, the DRM path is untested.
 
 ## Using the tools
 
