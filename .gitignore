@@ -1,0 +1,11 @@
+# Firmware images and anything extracted from them are Anbernic's property.
+# Keep them out of the repository.
+*.img
+*.IMG
+*.7z
+*.img.gz
+*.tar.xz
+fw/
+extracted/
+out/
+examples/*/dualscreen
