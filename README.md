@@ -9,9 +9,12 @@ Research and tooling for writing custom software for the Anbernic RG DS Plus
 - [docs/UART.md](docs/UART.md): checklist for finding the UART pads and capturing the boot log.
 - [docs/BANANA.md](docs/BANANA.md): what BananaLinux's build files show (kernel, U-Boot, image layout)
   and how to use it as a UART test image.
+- [docs/DUAL_SCREEN_KMS.md](docs/DUAL_SCREEN_KMS.md): how BananaLinux drives both panels through KMS
+  (which connector is top, CRTCs, dumb buffers, DRM leases, sleep).
 - [tools/extract_firmware.py](tools/extract_firmware.py): unpacks an official image
   (partitions, boot FIT, kernel, kernel config, device trees).
 - [examples/dualscreen](examples/dualscreen): SDL2 test that opens one window per display.
+- [examples/kms_dualscreen](examples/kms_dualscreen): direct DRM/KMS test, no compositor (stop Weston first).
 
 ## Using the tools
 

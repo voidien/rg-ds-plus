@@ -69,8 +69,10 @@ Standard Rockchip GPT, 15 GB image. The loader (`RKNS` header) sits at sector 64
 5. Apps use `SDL_VIDEODRIVER=wayland`, `WAYLAND_DISPLAY=wayland-0`,
    `XDG_RUNTIME_DIR=/var/run`, enumerate with `SDL_GetNumVideoDisplays` /
    `SDL_GetDisplayBounds`, and open one window per display (`subscreen.dge`) [I].
-6. Which of DSI-1 / DSI-2 is the top screen: not determined [?]. The example in
-   `examples/dualscreen/` prints and colours each display so you can find out.
+6. Which connector is the top screen: **DSI-2 (controller `fe070000`) is top, DSI-1 (`fe060000`) is
+   bottom**, per BananaLinux's code and comments (docs/DUAL_SCREEN_KMS.md) [V in their source, not
+   yet confirmed by me on hardware]. `examples/dualscreen/` prints and colours each display so you
+   can confirm.
 7. Touch (Goodix GT911, I2C `0x14`, 1024x768) belongs to one screen only (the
    bottom one, per the community SDK). `echo 0|1 > /sys/class/anbernic_misc/tpctrl`
    toggles it.

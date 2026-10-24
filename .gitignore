@@ -9,3 +9,4 @@ fw/
 extracted/
 out/
 examples/*/dualscreen
+examples/*/kms_dualscreen

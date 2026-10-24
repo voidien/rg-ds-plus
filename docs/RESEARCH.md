@@ -90,4 +90,4 @@ own image, then kernel/panel upstreaming.
 1. Is the RG DS Plus image published for ROCKNIX, and how well does it run?
 2. UART pad and maskrom pad locations.
 3. Does Anbernic supply GPL source on request?
-4. Which DSI output is the top screen? (run `examples/dualscreen`)
+4. Confirm on hardware that DSI-2 is the top screen (BananaLinux says so; run `examples/dualscreen`)
