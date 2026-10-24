@@ -12,6 +12,8 @@ Research and tooling for writing custom software for the Anbernic RG DS Plus
 - [docs/DUAL_SCREEN_KMS.md](docs/DUAL_SCREEN_KMS.md): how BananaLinux drives both panels through KMS
   (which connector is top, CRTCs, dumb buffers, DRM leases, sleep).
 - [docs/GPU_PATH.md](docs/GPU_PATH.md): the GBM + EGL + GLES2 renderer for both panels and its test status.
+- [docs/CROSS_COMPILE.md](docs/CROSS_COMPILE.md): building the examples for aarch64 and the first-run
+  checklist (`tools/cross_build.sh`, `examples/launchers/`).
 - [tools/extract_firmware.py](tools/extract_firmware.py): unpacks an official image
   (partitions, boot FIT, kernel, kernel config, device trees).
 - [examples/dualscreen](examples/dualscreen): SDL2 test that opens one window per display.
