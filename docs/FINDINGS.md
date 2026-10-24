@@ -96,7 +96,7 @@ the Plus (SD only).
 | Battery | 4247 mAh; stock charge limits: input 1500 mA, charge 2000 mA, max 4400 mV, term 100 mA |
 | SD | slot 1 sdmmc0, slot 2 sdmmc1 (detect GPIO0 PC0); eMMC controller present but unpopulated on the Plus |
 | Lid | hall switch on GPIO0 PC3 |
-| Debug UART | UART2 at `0xfe660000`, `console=ttyFIQ0`, 1.5 Mbaud (pads not located [?]) |
+| Debug UART | UART2 (`uart2m0`: GPIO0_D0 = RX, GPIO0_D1 = TX) at `0xfe660000`, `console=ttyFIQ0`, 1.5 Mbaud; likely 3.3 V [I]; pads not located [?] (see UART.md) |
 | Disabled in stock | AW87391 amps, ICM-42607 IMU |
 
 ## Comparison with ROCKNIX's `rk3568-anbernic-rg-ds-plus.dts`

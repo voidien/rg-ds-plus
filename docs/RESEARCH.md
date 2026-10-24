@@ -55,8 +55,10 @@ Generic ROCKNIX dual-screen is weak: MelonDS-SA reportedly misbehaves; see
 
 VOP2 5.19; DSI 6.1; Panfrost 5.18; I2S 5.16; RK817 codec 5.14, charger 6.1.
 Panthor covers CSF Valhall GPUs (RK3588), not the G52 (Bifrost, Panfrost).
-Not confirmed: both DSI panels up on one mainline kernel; suspend. BananaLinux gets
-suspend-to-RAM working but must unload the Wi-Fi module first.
+Update after reading BananaLinux's build files ([BANANA.md](BANANA.md)): it boots both DSI panels on
+mainline Linux 7.2.7 plus ROCKNIX's patch set and an out-of-tree generic DSI panel driver, so "works on
+mainline" is true with patches, not purely upstream. Suspend-to-RAM is implemented but still being
+validated on units, and it must unload the Wi-Fi module first.
 
 ## 4. Boot chain and recovery
 

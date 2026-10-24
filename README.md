@@ -6,6 +6,9 @@ Research and tooling for writing custom software for the Anbernic RG DS Plus
 - [docs/RESEARCH.md](docs/RESEARCH.md): feasibility report, community landscape, development paths.
 - [docs/FINDINGS.md](docs/FINDINGS.md): hardware and software facts extracted from the stock firmware,
   and a comparison with ROCKNIX's device tree.
+- [docs/UART.md](docs/UART.md): checklist for finding the UART pads and capturing the boot log.
+- [docs/BANANA.md](docs/BANANA.md): what BananaLinux's build files show (kernel, U-Boot, image layout)
+  and how to use it as a UART test image.
 - [tools/extract_firmware.py](tools/extract_firmware.py): unpacks an official image
   (partitions, boot FIT, kernel, kernel config, device trees).
 - [examples/dualscreen](examples/dualscreen): SDL2 test that opens one window per display.
